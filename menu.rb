@@ -23,4 +23,11 @@ class Menu
     end
   end
 
+  def make_choice()
+    puts "Which one would you like?"
+    pizza_nr = gets.chomp.to_i
+
+    @pizzas.find { |pizza| pizza.number == pizza_nr }
+  end
+
 end
